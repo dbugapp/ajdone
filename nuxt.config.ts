@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       care: {
-        apiKey: '0ep9iok8gkgaexerq21f6d5mzm6j7z0b',
+        apiKey: 'fe052ambu6rt6582rph8baqb1xjhpytg',
         apiDomain: 'http://localhost:3000',
         verbose: true,
       },
