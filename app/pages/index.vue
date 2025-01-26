@@ -1,16 +1,14 @@
 <script setup lang="ts">
-const referenceErrorBob = () => console.log(bob)
-const referenceErrorSuzy = () => console.log(suzy)
+const { user } = useUserSession()
 </script>
 
 <template>
   <UPage>
-    <UPageHeader title="fume.care test repo" />
+    <UPageHeader title="ajdone" description="example app showing off nuxt-auth-utils with nuxt-app-utils" />
     <UPageBody>
-      <div class="flex items-center space-x-2">
-        <UButton label="referenceError(bob)" @click="referenceErrorBob" />
-        <UButton label="referenceError(suzy)" @click="referenceErrorSuzy" />
-      </div>
+      <pre>
+        {{ user }}
+      </pre>
     </UPageBody>
   </UPage>
 </template>

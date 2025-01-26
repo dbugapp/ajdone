@@ -3,7 +3,10 @@ export default defineNuxtConfig({
     '@nuxthub/core',
     '@nuxt/eslint',
     '@nuxt/ui-pro',
-    'fume.care',
+    // 'fume.care',
+    '../care/src/module',
+    'nuxt-auth-utils',
+    'nuxt-api-utils',
   ],
 
   devtools: { enabled: true },
@@ -12,10 +15,30 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      url: '',
+      prefix: 'ajdone',
       care: {
-        apiKey: 'fe052ambu6rt6582rph8baqb1xjhpytg',
-        apiDomain: 'http://localhost:3000',
+        apiKey: '',
+        apiDomain: '',
         verbose: true,
+        userFromAuthUtils: true,
+      },
+    },
+    session: {
+      maxAge: 60 * 60 * 24 * 365, // 1 year
+      name: 'ajdone-session',
+      password: '',
+    },
+    oauth: {
+      google: {
+        clientId: '',
+        clientSecret: '',
+        redirectURL: '',
+      },
+      github: {
+        clientId: '',
+        clientSecret: '',
+        redirectURL: '',
       },
     },
   },
@@ -25,8 +48,10 @@ export default defineNuxtConfig({
   },
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-07-30',
-
-  hub: {},
+  hub: {
+    database: true,
+    blob: true,
+  },
 
   eslint: {
     config: {

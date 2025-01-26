@@ -9,24 +9,31 @@
     "preview": "npx nuxthub preview",
     "deploy": "npx nuxthub deploy",
     "postinstall": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.7.5",
     "@nuxt/ui-pro": "3.0.0-alpha.11",
     "@nuxthub/core": "^0.8.14",
     "add": "^2.0.6",
+    "drizzle-orm": "^0.38.4",
     "fume.care": "^0.0.13",
-    "nuxt": "^3.15.2",
+    "nuxt": "^3.15.3",
     "pnpm": "^9.15.4",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.7.5",
-    "eslint": "^9.18.0",
+    "drizzle-kit": "^0.30.2",
+    "eslint": "^9.19.0",
+    "nuxt-api-utils": "^0.0.27",
+    "nuxt-auth-utils": "^0.5.9",
     "typescript": "^5.7.3",
+    "ua-parser-js": "^2.0.0",
     "vue-tsc": "^2.2.0",
-    "wrangler": "^3.105.0"
-  }
+    "wrangler": "^3.105.1"
+  },
+  "packageManager": "pnpm@9.5.0+sha1.8c155dc114e1689d18937974f6571e0ceee66f1d"
 }
