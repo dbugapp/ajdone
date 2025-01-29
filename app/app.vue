@@ -4,14 +4,25 @@ const logout = async () => {
   await $fetch('/api/logout')
   clear()
 }
+
+const links = ref([
+  {
+    label: 'Home',
+    to: '/',
+  },
+  {
+    label: 'Errors',
+    to: '/error',
+  },
+])
 </script>
 
 <template>
   <UApp>
     <NuxtLoadingIndicator />
-    <UHeader>
-      <template #left>
-        AJDONE
+    <UHeader :links="links">
+      <template #logo>
+        AJD0N3
       </template>
       <template #right>
         <UButton
