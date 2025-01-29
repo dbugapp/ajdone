@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         apiKey: '',
         apiDomain: '',
         verbose: true,
-        userFromAuthUtils: true,
+        authUtils: true,
       },
     },
     session: {

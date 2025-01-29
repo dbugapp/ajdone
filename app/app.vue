@@ -5,7 +5,7 @@ const logout = async () => {
   clear()
 }
 
-const links = ref([
+const items = ref([
   {
     label: 'Home',
     to: '/',
@@ -20,10 +20,11 @@ const links = ref([
 <template>
   <UApp>
     <NuxtLoadingIndicator />
-    <UHeader :links="links">
-      <template #logo>
+    <UHeader>
+      <template #title>
         AJD0N3
       </template>
+      <UNavigationMenu :items="items" />
       <template #right>
         <UButton
           v-if="!loggedIn"
