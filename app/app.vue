@@ -22,7 +22,7 @@ const items = ref([
     <NuxtLoadingIndicator />
     <UHeader>
       <template #title>
-        AJD0N3
+        ajdone
       </template>
       <UNavigationMenu :items="items" />
       <template #right>
