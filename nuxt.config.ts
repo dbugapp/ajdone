@@ -12,16 +12,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   css: ['~/assets/css/main.css'],
-
   runtimeConfig: {
     public: {
       url: '',
       prefix: 'ajdone',
       care: {
-        apiKey: '',
-        apiDomain: '',
-        verbose: true,
-        authUtils: true,
+        key: '',
+        domain: '',
+        env: '',
+        log: true,
       },
     },
     session: {
