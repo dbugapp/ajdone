@@ -13,26 +13,26 @@
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
-    "@nuxt/eslint": "1.0.0",
+    "@nuxt/eslint": "1.1.0",
     "@nuxt/ui-pro": "3.0.0-alpha.12",
-    "@nuxthub/core": "^0.8.15",
-    "drizzle-orm": "^0.39.1",
+    "@nuxthub/core": "^0.8.17",
+    "drizzle-orm": "^0.40.0",
     "fume.care": "^0.0.21",
     "nuxt": "^3.15.4",
-    "pnpm": "^9.15.4",
+    "pnpm": "^10.5.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "1.0.0",
-    "drizzle-kit": "^0.30.4",
-    "eslint": "^9.19.0",
-    "nuxt-api-utils": "^0.0.27",
-    "nuxt-auth-utils": "^0.5.10",
-    "typescript": "^5.7.3",
-    "ua-parser-js": "^2.0.0",
-    "vue-tsc": "^2.2.0",
-    "wrangler": "^3.107.2"
+    "@nuxt/eslint-config": "1.1.0",
+    "drizzle-kit": "^0.30.5",
+    "eslint": "^9.21.0",
+    "nuxt-api-utils": "^0.0.28",
+    "nuxt-auth-utils": "^0.5.16",
+    "typescript": "^5.8.2",
+    "ua-parser-js": "^2.0.2",
+    "vue-tsc": "^2.2.8",
+    "wrangler": "^3.112.0"
   },
   "packageManager": "pnpm@9.5.0+sha1.8c155dc114e1689d18937974f6571e0ceee66f1d"
 }
