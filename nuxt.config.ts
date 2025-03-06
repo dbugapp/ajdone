@@ -3,8 +3,8 @@ export default defineNuxtConfig({
     '@nuxthub/core',
     '@nuxt/eslint',
     '@nuxt/ui-pro',
-    // 'fume.care',
-    '../care/src/module',
+    // '../dbug-module/src/module',
+    '@dbugapp/nuxt',
     'nuxt-auth-utils',
     'nuxt-api-utils',
   ],
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     public: {
       url: '',
       prefix: 'ajdone',
-      care: {
+      dbug: {
         key: '',
         domain: '',
         env: '',

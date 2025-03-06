@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const variable = 'bob'
-useCare().tag('page', 'errors')
-useCare().tag('project', 'ajdone')
+useDbug().tag('page', 'errors')
+useDbug().tag('project', 'ajdone')
 const referenceErrorBob = () => console.log(bob)
 const referenceErrorSuzy = () => console.log(suzy)
 const nitroUserError = () => $fetch('/api/user')

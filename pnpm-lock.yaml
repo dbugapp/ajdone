@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dbugapp/nuxt':
+        specifier: ^0.0.28
+        version: 0.0.28(magicast@0.3.5)
       '@nuxt/eslint':
         specifier: 1.1.0
         version: 1.1.0(@vue/compiler-sfc@3.5.13)(eslint@9.21.0(jiti@2.4.2))(magicast@0.3.5)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))
@@ -20,9 +23,6 @@ importers:
       drizzle-orm:
         specifier: ^0.40.0
         version: 0.40.0(@cloudflare/workers-types@4.20250303.0)(gel@2.0.0)
-      fume.care:
-        specifier: ^0.0.21
-        version: 0.0.21(magicast@0.3.5)
       nuxt:
         specifier: ^3.15.4
         version: 3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.9)(db0@0.2.4(drizzle-orm@0.40.0(@cloudflare/workers-types@4.20250303.0)(gel@2.0.0)))(drizzle-orm@0.40.0(@cloudflare/workers-types@4.20250303.0)(gel@2.0.0))(eslint@9.21.0(jiti@2.4.2))(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.9)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(vue-tsc@2.2.8(typescript@5.8.2))(yaml@2.7.0)
@@ -291,6 +291,9 @@ packages:
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
+
+  '@dbugapp/nuxt@0.0.28':
+    resolution: {integrity: sha512-Tfge+kAl/T4pby8GTqPCLaujrJ2/M8YhWJ6MxC8i9bX2Bp0dba4G5c69Vy33olg6VYuBHNp7LXzhNEKX5PfwSw==}
 
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
@@ -3313,9 +3316,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  fume.care@0.0.21:
-    resolution: {integrity: sha512-xRUfRBX8Fyfa7LdefU1rEozSvTv3eTt0qXBZre1T4esg7kS1/R2rAEvu9DB50m9AXeWZgpTGe6FxKXv7OaNqkg==}
-
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -5821,6 +5821,13 @@ snapshots:
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+
+  '@dbugapp/nuxt@0.0.28(magicast@0.3.5)':
+    dependencies:
+      '@nuxt/kit': 3.15.4(magicast@0.3.5)
+    transitivePeerDependencies:
+      - magicast
+      - supports-color
 
   '@drizzle-team/brocli@0.10.2': {}
 
@@ -8989,13 +8996,6 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
-
-  fume.care@0.0.21(magicast@0.3.5):
-    dependencies:
-      '@nuxt/kit': 3.15.4(magicast@0.3.5)
-    transitivePeerDependencies:
-      - magicast
-      - supports-color
 
   function-bind@1.1.2: {}
 
