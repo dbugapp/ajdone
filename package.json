@@ -13,7 +13,7 @@
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
-    "@dbugapp/nuxt": "^0.0.28",
+    "@dbugapp/nuxt": "^0.0.31",
     "@nuxt/eslint": "1.1.0",
     "@nuxt/ui-pro": "3.0.0-alpha.12",
     "@nuxthub/core": "^0.8.17",

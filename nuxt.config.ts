@@ -14,14 +14,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      url: '',
       prefix: 'ajdone',
-      dbug: {
-        key: '',
-        domain: '',
-        env: '',
-        log: true,
-      },
     },
     session: {
       maxAge: 60 * 60 * 24 * 365, // 1 year
@@ -41,7 +34,6 @@ export default defineNuxtConfig({
       },
     },
   },
-
   devServer: {
     port: 3001,
   },
