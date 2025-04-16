@@ -17,8 +17,8 @@ const test = () => console.log(variable.value)
         <UButton label="referenceError(bob)" @click="referenceErrorBob" />
         <UButton label="referenceError(suzy)" @click="referenceErrorSuzy" />
         <UButton label="test()" @click="test" />
-        <UButton label="nitroUserError()" @click="() => nitroUserError()" />
-        <UButton label="nitroNoUserError()" @click="() => nitroNoUserError()" />
+        <UButton label="nitroUserError()" @click="() => { nitroUserError() }" />
+        <UButton label="nitroNoUserError()" @click="() => { nitroNoUserError() }" />
       </div>
     </UPageBody>
   </UPage>
