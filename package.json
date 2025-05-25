@@ -33,6 +33,5 @@
     "ua-parser-js": "^2.0.2",
     "vue-tsc": "^2.2.8",
     "wrangler": "^3.112.0"
-  },
-  "packageManager": "pnpm@9.5.0+sha1.8c155dc114e1689d18937974f6571e0ceee66f1d"
+  }
 }
