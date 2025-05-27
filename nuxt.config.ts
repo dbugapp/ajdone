@@ -3,8 +3,8 @@ export default defineNuxtConfig({
     '@nuxthub/core',
     '@nuxt/eslint',
     '@nuxt/ui-pro',
-    '../dbug-module/src/module',
-    // '@dbugapp/nuxt',
+    // '../nuxt/src/module',
+    '@dbugapp/nuxt',
     'nuxt-auth-utils',
     'nuxt-api-utils',
   ],
@@ -42,6 +42,9 @@ export default defineNuxtConfig({
   hub: {
     database: true,
     blob: true,
+  },
+  dbug: {
+    authUtils: true,
   },
 
   eslint: {

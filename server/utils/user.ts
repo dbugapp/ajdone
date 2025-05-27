@@ -76,16 +76,16 @@ export const userCreate = async (info: UserInfo, provider: string, oauthPayload:
 
   const [user] = existing
     ? await useDrizzle().update(tables.users)
-      .set({ name: info.name })
-      .where(eq(tables.users.id, existing.id))
-      .returning()
+        .set({ name: info.name })
+        .where(eq(tables.users.id, existing.id))
+        .returning()
     : await useDrizzle().insert(tables.users)
-      .values({
-        email: info.email,
-        name: info.name,
-        avatar: info.avatar ? `${useRuntimeConfig(event).public.url}/api/image/${await storeAvatar(info.avatar)}` : null,
-      })
-      .returning()
+        .values({
+          email: info.email,
+          name: info.name,
+          avatar: info.avatar ? `${useRuntimeConfig(event).public.url}/api/image/${await storeAvatar(info.avatar)}` : null,
+        })
+        .returning()
 
   if (!user) createError('Failed to create user')
 
